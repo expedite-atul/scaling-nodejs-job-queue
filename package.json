@@ -1,0 +1,28 @@
+{
+  "name": "bullimplementation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "tsc && node ./dist/bull/server.js",
+    "worker": "tsc && node ./dist/bull/worker.js",
+    "stress": "ab -n 5000 -c 10 http://localhost:3000/test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "bull",
+    "typescript",
+    "queue",
+    "jobQueue"
+  ],
+  "author": "atul",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.10.6",
+    "@types/node": "^12.12.14"
+  }
+}
